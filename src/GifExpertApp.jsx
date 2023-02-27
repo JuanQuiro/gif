@@ -8,7 +8,7 @@ export const Gif = () => {
   const [categoris, setCategoris] = useState([]);
 
   return (
-    <div>
+    <div >
       <Search setCategoris={setCategoris} />
       <ol >
         {categoris.map((categoris) => (
