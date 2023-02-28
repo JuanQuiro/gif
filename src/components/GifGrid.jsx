@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import GetGif from "../helpers/GetGif";
 import { usefetch } from "../hooks/usefetch";
 import GifGridItem from "./GifGridItem";
-import "../output.css"
+import "/dist/output.css"
 
 const GifGrid = ({ categoris }) => {  
 

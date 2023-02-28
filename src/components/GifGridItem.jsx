@@ -1,5 +1,5 @@
 import React from 'react'
-import '../output.css'
+import '/dist/output.css'
 
 const GifGridItem = ({title,url,id}) => {
   return (
