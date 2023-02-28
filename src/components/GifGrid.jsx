@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import GetGif from "../helpers/GetGif";
-import { usefetch } from "../hooks/usefetch";
+import { usefetch } from "../hooks/usefetch.jsx";
 import GifGridItem from "./GifGridItem";
 import "../output.css"
 
