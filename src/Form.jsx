@@ -1,8 +1,10 @@
 import React from "react";
 import { useState } from "react";
+import "./output.css"
+
 
 export const Search = ({ setCategoris }) => {
-  const [text, setText] = useState("Hola Mundo");
+  const [text, setText] = useState("");
 
   return (
     <div className="grid justify-center p-3  bg-black ">
@@ -13,13 +15,14 @@ export const Search = ({ setCategoris }) => {
           console.log("enter");
           if (text.trim().length > 2) {
             setCategoris((cats) => [text,...cats]);
-            setText("Sigue buscando aqui");
+            setText("");
           }
         }}
       >
         <input
-          className=" hover:shadow-yellow-300 hover:shadow-sm bg-yellow-700 p-3 rounded-3xl border-white border "
+          className=" hover:scale-105 ease-in-out duration-300 delay-150 text-black placeholder:text-white placeholder:font-extralight text-center hover:shadow-yellow-300 hover:shadow-sm bg-yellow-700 p-3 rounded-3xl border-white border "
           type="text"
+          placeholder="Sigue buscando aqui"
           name=""
           id=""
           value={text}

@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import GetGif from "../helpers/GetGif";
 import { usefetch } from "../hooks/usefetch";
 import GifGridItem from "./GifGridItem";
-import "/dist/output.css"
+import "../output.css"
 
 const GifGrid = ({ categoris }) => {  
 
@@ -17,7 +17,7 @@ const GifGrid = ({ categoris }) => {
       {
         loading ? <p className="bg-green-900 text-white">Cargando</p> : <p className="text-white bg-green-900">Data Cargada</p>
       }
-      <ul className="grid grid-cols-6  border-red-600 bg-black text-white  ">
+      <ul className="grid grid-cols-1  border-red-600 bg-black text-white sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
         {
         imagenes.map((e) => (<GifGridItem key={e.id} {...e}/>))
         }
