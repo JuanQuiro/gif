@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "/dist/output.css"
+import "./output.css"
 
 
 export const Search = ({ setCategoris }) => {
